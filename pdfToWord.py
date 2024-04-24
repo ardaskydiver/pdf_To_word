@@ -1,19 +1,20 @@
-# Import the required modules
+#pip install Converter
+# Gerekli kütüphane içeri aktarılır
 from pdf2docx import Converter
 
-# Keeping the PDF's location in a separate variable
+# PDF konumu girilir
 pdf_file = r"D:\Egitimler\GDAT_Arda\Instructor\GDAT_9.0_to_GDAT_10.0_CompareDoc.pdf"
 
-# Maintaining the Document's path in a separate variable
+# Oluşturulacak docx konumu girilir
 docx_file = r"D:\Egitimler\GDAT_Arda\Instructor\example.docx"
 
-# Using the built-in function, convert the PDF file to a document file by saving it in a variable.
+# Girdi tipi parametresi
 cv = Converter(pdf_file)
 
-# Storing the Document in the variable's initialised path
+# Saklama tipi parametresi
 cv.convert(docx_file)
 
-# Conversion closure through the function close()
+# Dönüşüm sonu kapatma
 cv.close()
 
 
